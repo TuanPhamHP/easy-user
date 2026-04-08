@@ -9,6 +9,7 @@ import UserDetail from './pages/UserDetail';
 import UserAdd from './pages/UserAdd';
 import UserEdit from './pages/UserEdit';
 import LayoutDiagram from './pages/LayoutDiagram';
+import FileTree from './pages/FileTree';
 import './App.css';
 
 const initialUsers = [
@@ -63,6 +64,7 @@ function App() {
 					<Route path='/users/edit/:id' element={<UserEdit users={users} onUpdate={updateUser} />} />
 					<Route path='/users/:id' element={<UserDetail users={users} />} />
 					<Route path='/diagram' element={<LayoutDiagram />} />
+					<Route path='/files' element={<FileTree />} />
 				</Route>
 			</Route>
 			<Route path='*' element={<Navigate to={isLoggedIn ? '/' : '/login'} replace />} />

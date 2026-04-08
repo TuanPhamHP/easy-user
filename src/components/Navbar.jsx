@@ -17,6 +17,7 @@ export default function Navbar({ currentUser, onLogout }) {
 			<div className='navbar-menu'>
 				<Link to='/'>Người dùng</Link>
 				<Link to='/diagram'>Sơ đồ</Link>
+				<Link to='/files'>Cấu trúc file</Link>
 			</div>
 			<div className='navbar-user'>
 				<span className='navbar-username'>Xin chào, {currentUser?.name}</span>
